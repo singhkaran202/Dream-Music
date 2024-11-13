@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import LeftSidebar from './components/SideBar/mainSidebar'
+import CenterDash from './components/MainDashboard/main_dashboard'
+import RightMusicBar from './components/Songbar/mainSongbar' 
+import { MusicProvider } from './components/MusicContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <MusicProvider>
+     <div className="App">
+      
+      <div className='left'>
+        <LeftSidebar />
+      </div>
+      <div className='mainn'>
+        <div className='center'>
+          <CenterDash />
+        </div>
+        <div className='right'>
+          <RightMusicBar />
+        </div>
+      </div>        
     </div>
+  </MusicProvider>
   );
 }
 

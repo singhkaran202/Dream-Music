@@ -1,0 +1,12 @@
+.logo{
+    border: 2px solid red
+}
+.logo-cls{
+    border: 3px solid white;
+    display: inline-block;
+    
+}
+.logoo{
+    width: 80%;
+    margin: 10% 10%;
+}

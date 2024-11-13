@@ -1,0 +1,21 @@
+.header{
+    /* border: 2px solid pink; */
+}
+.search{
+    display: inline-block;
+    /* border: 2px solid pink; */
+    width: 38%;
+    margin-bottom: -2%;
+}
+.header-btns{
+    /* border: 2px solid pink; */
+    width: 60%;
+    display: inline-block;
+}
+.btns{
+    display: inline-block;
+    color: white;
+    margin-left: 13%; 
+    padding-top: 2%;
+    padding-bottom: 0%;
+}
