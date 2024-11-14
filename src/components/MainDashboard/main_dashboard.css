@@ -1,6 +1,24 @@
-.mainDashboard{
-    border: 8px solid rgb(0, 0, 0);
+/* .mainDashboard{
+    border: 2px solid rgb(0, 0, 0);
 }
 .artist{
     width: 80%;
-}
+} */
+
+.mainDashboard {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  
+  .nav-menu::-webkit-scrollbar {
+    display: none;
+  }

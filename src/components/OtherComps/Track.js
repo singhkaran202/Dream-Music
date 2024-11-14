@@ -2,7 +2,6 @@ import React from "react";
 import { Howl } from "howler";
 import { Play, Pause } from 'lucide-react';
 import "./track.css";
-// import "./al"
 
 export default function Track({
   track,

@@ -1,5 +1,3 @@
-//Player.js code
-
 import React, { useState, useEffect } from 'react';
 import { Repeat, Shuffle, Play, Pause, SkipBack, SkipForward } from 'lucide-react';
 import { Howl } from 'howler';
@@ -129,85 +127,6 @@ import "./player.css"
     return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
   }
 
-//   return (
-// <div className="text-clr-player">
-//       <div className="">
-//         <div className="">
-//           {trackDetail?.imageUrl && (
-//             <div className="">
-//               <img 
-//                 src={trackDetail.imageUrl} 
-//                 alt={trackDetail.tracktitle} 
-//                 className="imgh"
-//               />
-//             </div>
-//           )}
-          
-//           <div className="text-clr-player">
-//             <h2 className="text-clr-player">{trackDetail?.tracktitle || "Select a track"}</h2>
-//             <p className="text-clr-player">{trackDetail?.trackArtist}</p>
-//           </div>
-
-//           <div className="">
-//             <div className="">
-//               <span className="">{formatTime(currentTime)}</span>
-//               <input
-//                 type="range"
-//                 className=""
-//                 min="0"
-//                 max={selectedMusic ? selectedMusic.duration() : 0}
-//                 value={currentTime || 0}
-//                 onChange={handleSeekChange}
-//               />
-//               <span className="">
-//                 {selectedMusic ? formatTime(selectedMusic.duration()) : "00:00"}
-//               </span>
-//             </div>
-
-//             <div className="">
-//               <button 
-//                 onClick={() => setIsShuffled(!isShuffled)}
-//                 className={`p-2 rounded-full hover:bg-red-800 transition ${isShuffled ? 'bg-red-700' : ''}`}
-//               >
-//                 <Shuffle size={20} />
-//               </button>
-              
-//               <button 
-//                 onClick={handlePrev}
-//                 className=""
-//               >
-//                 <SkipBack size={24} />
-//               </button>
-
-//               <button 
-//                 onClick={togglePlay}
-//                 className=""
-//               >
-//                 {isPlaying ? <Pause size={24} /> : <Play size={24} />}
-//               </button>
-
-//               <button 
-//                 onClick={handleNext}
-//                 className="p-2 rounded-full hover:bg-red-800 transition"
-//               >
-//                 <SkipForward size={24} />
-//               </button>
-
-//               <button 
-//                 onClick={() => setIsLooping(!isLooping)}
-//                 className={`p-2 rounded-full hover:bg-red-800 transition ${isLooping ? 'bg-red-700' : ''}`}
-//               >
-//                 <Repeat size={20} />
-//               </button>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Player;
 
 return (
   <div className="player-container">

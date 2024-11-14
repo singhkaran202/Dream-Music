@@ -1,6 +1,5 @@
 import React from "react";
 import './main_dashboard.css'
-
 import Header from "./Header"
 import SongList from "./songsList";
 import artist from "./artist.svg"

@@ -4,12 +4,11 @@
     border-radius: 5px;
     object-fit: cover;
   }
-
   .track-cls{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
   }
   .track-main-cls{
-    border: 4px solid pink;
+    /* border: 4px solid pink; */
     margin: 4%;
   }
   .imggg{
@@ -19,7 +18,6 @@
     object-fit: cover;
   }
   td.album{
-    /* padding-left: 2%; */
+
     text-align: right;
-    /* border: 2px solid rgb(75, 128, 0); */
   }

@@ -1,9 +1,7 @@
 .mainSongbar{
-    border: 2px solid rgb(166, 255, 0);
-    height: 100vh;
+    /* border: 2px solid rgb(166, 255, 0); */
+    height: 140vh;
     display: flex;
     align-items: flex-end;
 }
-.sbox{
-    display: flex;
-}
+

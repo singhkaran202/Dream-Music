@@ -1,18 +1,5 @@
-/* .player-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1e1e1e;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    border: 12px solid rgb(128, 0, 115);
-  } */
-   /* .player-container{
-    border: 12px solid rgb(140, 19, 19);
-   }
-   */
-  .player-content {
+
+  /* .player-content {
     width: 80%;
     max-width: 600px;
     padding: 8%;
@@ -20,30 +7,47 @@
     border-radius: 15px;
     background: #6B0000;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    /* margin-bottom: 2%; */
+   
+  } */
+
+  .player-container {
+    width: 90%;
+    transition: all 0.3s ease;
   }
   
+  .player-content {
+    width: 92%;
+    padding: 20px;
+    border-radius: 15px;
+    background: #6B0000;
+  }
+
   .track-info {
     display: flex;
     margin-bottom: 5%;
-    border: 2px solid rgb(255, 98, 0);
+    /* border: 2px solid rgb(255, 98, 0); */
     flex-direction: column;
     align-items: center;
   }
   .track-image {
-   
-    border: 2px solid blue;
+    width: 225px;
+    height: 229px;
+    /* border: 2px solid blue; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+
   }
   .track-image img {
-    width: 80%;
-    
+    width: 100%;
     display: flex;
     align-items: center;
     border-radius: 5px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   .track-details{
-    border: 2px solid rgb(255, 255, 255);
+    /* border: 2px solid rgb(255, 255, 255); */
   }
   .track-details h2 {
     font-size: 18px;
@@ -109,7 +113,7 @@
       width: 100%;
       border: none;
       border-radius: 0;
-      border: 2px solid rgb(128, 0, 115);
+      /* border: 2px solid rgb(128, 0, 115); */
     }
   
     .track-info {
@@ -119,7 +123,7 @@
   
     .track-image {
       margin-bottom: 10px;
-      border: 2px solid blue;
+      /* border: 2px solid blue; */
     }
   
     .track-details h2 {
@@ -139,88 +143,25 @@
     }
   }
 
-/* 
+
+@media (max-width: 768px) {
   .player-content {
-    width: 80%;
-    max-width: 300px;
-    padding: 30px;
-    background-color: #800000;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    padding: 10px;
   }
-  
+
   .track-info {
-    border: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
-  
+
   .track-image img {
-    width: 80px;
-    height: 80px;
-    border: 2px solid #ff6200;
-    border-radius: 5px;
-    margin-right: 20px;
+    width: 50px;
+    height: 50px;
   }
-  
-  .track-details h2 {
-    font-size: 24px;
-    font-weight: bold;
+
+  .control-buttons {
+    gap: 15px;
   }
-  
-  .track-details p {
-    font-size: 16px;
-  }
-  
-  .time-controls span {
-    font-size: 16px;
-  }
-  
-  .seek-bar {
-    height: 6px;
-    background-color: #333;
-  }
-  
-  .seek-bar::-webkit-slider-thumb {
-    width: 16px;
-    height: 16px;
-    background-color: #ff6200;
-  }
-  
-  .control-buttons button {
-    font-size: 24px;
-    color: #000000;
-  }
-  
-  .control-buttons button.active {
-    color: #ff6200;
-    
-  }
-  
-  @media (max-width: 480px) {
-    .player-content {
-      width: 90%;
-      border-radius: 0;
-      border: 2px solid #800000;
-    }
-  
-    .track-image img {
-      width: 60px;
-      height: 60px;
-    }
-  
-    .track-details h2 {
-      font-size: 18px;
-    }
-  
-    .track-details p {
-      font-size: 14px;
-    }
-  
-    .time-controls span {
-      font-size: 14px;
-    }
-  
-    .control-buttons button {
-      font-size: 20px;
-    }
-  } */
+}

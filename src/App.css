@@ -1,12 +1,278 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
   font-family: 'Poppins', sans-serif;
-  color: #ffffff; /* Set a default font color if needed */
+  color: #ffffff; 
 }
 
+/* App.css updates */
+.App {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  /* border: 5px solid green; */
+}
+
+.left {
+  width: 15%;
+  min-height: 100vh;
+  min-width: 200px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.mainn {
+  flex: 1;
+  display: flex;
+  flex-direction: row; /* Changed to row to align center and right side by side */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 73.01%, rgba(15, 15, 15, 0.6) 73.01%), linear-gradient(180deg, #4C0000 0%, #0A0A0A 100%);
+}
+
+.center {
+  width: 71%; /* Fixed width to ensure right section gets its space */
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.right {
+  width: 25%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .left {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    z-index: 999;
+    width: 70%;
+    max-width: 300px;
+  }
+
+  .left.active {
+    left: 0;
+  }
+
+  .mainn {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 60px;
+    flex-direction: column; /* Stack vertically on mobile */
+  }
+
+  .center {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .right {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #6B0000;
+    z-index: 998;
+    height: auto;
+    max-height: 100px;
+  }
+}
+
+/* Rest of the CSS remains the same */
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+@media (max-width: 768px) {
+  .mobile-overlay.active {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  border: 9px solid green;
+}
+
+.left {
+  width: 15%;
+  min-width: 200px;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.mainn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 73.01%, rgba(15, 15, 15, 0.6) 73.01%), linear-gradient(180deg, #4C0000 0%, #0A0A0A 100%);
+}
+
+.center {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.right {
+  width: 26%;
+  position: relative;
+}
+
+
+.mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .left {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    z-index: 999;
+    width: 70%;
+    max-width: 300px;
+  }
+
+  .left.active {
+    left: 0;
+  }
+
+  .mainn {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 60px; 
+  }
+
+  .center {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .right {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #6B0000;
+    z-index: 998;
+    height: auto;
+    max-height: 100px;
+  }
+  .mobile-overlay.active {
+    display: block;
+  }
+} */
+
+
+
+
+
+
+
+
+
+/* 
+
+
 .App{
-  /* width: 100%; */
-  /* display: inline-block; */
   border: 9px solid green;
 }
 .left{
@@ -15,7 +281,6 @@
   border: 2px solid rgb(111, 0, 128);
 }
 .center{
-  /* margin-top: 34%; */
   display: inline-block;
   width: 70%;
   border: 2px solid rgb(38, 0, 255);
@@ -30,4 +295,258 @@
   display: inline-block;
   width: 80%;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 73.01%, rgba(15, 15, 15, 0.6) 73.01%), linear-gradient(180deg, #4C0000 0%, #0A0A0A 100%);
+} */
+
+/* Base styles */
+/* :root {
+  --sidebar-width: 240px;
+  --player-height: 100px;
+  --primary-color: #6B0000;
+  --text-color: #ffffff;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+}
+
+
+.App {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #4C0000 0%, #0A0A0A 100%);
+}
+
+
+.left {
+  position: fixed;
+  width: var(--sidebar-width);
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: var(--spacing-md);
+}
+
+.mainSidebar {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  padding: var(--spacing-md) 0;
+}
+
+.logo-cls {
+  text-align: center;
+}
+
+.logoo {
+  width: 80%;
+  max-width: 160px;
+  
+}
+
+
+.menu, .general {
+  padding: var(--spacing-md) 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-sm);
+  margin: var(--spacing-xs) 0;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pic-menu {
+  width: 24px;
+  height: 24px;
+}
+
+.text {
+  margin-left: var(--spacing-md);
+}
+
+
+.mainn {
+  margin-left: var(--sidebar-width);
+  width: calc(100% - var(--sidebar-width));
+  min-height: 100vh;
+}
+
+
+.mainDashboard {
+  padding: var(--spacing-lg);
+}
+
+.artist {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 16px;
+  margin: var(--spacing-lg) 0;
+}
+
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: var(--spacing-lg);
+}
+
+th, td {
+  padding: var(--spacing-sm);
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.imggg {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.player-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - var(--sidebar-width));
+  background: var(--primary-color);
+  padding: var(--spacing-md);
+}
+
+.player-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spacing-md);
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.track-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.track-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.player-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.time-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.seek-bar {
+  flex: 1;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+
+@media (max-width: 1024px) {
+  :root {
+    --sidebar-width: 200px;
+  }
+
+  .player-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .track-info {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .mainn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .mainSidebar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm);
+  }
+
+  .menu, .general {
+    display: none;
+  }
+
+  .player-container {
+    width: 100%;
+  }
+
+  table th:nth-child(4),
+  table td:nth-child(4),
+  table th:nth-child(6),
+  table td:nth-child(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainDashboard {
+    padding: var(--spacing-sm);
+  }
+
+  .track-image img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .control-buttons {
+    gap: var(--spacing-sm);
+  }
+
+  table th:nth-child(5),
+  table td:nth-child(5) {
+    display: none;
+  }
+} */

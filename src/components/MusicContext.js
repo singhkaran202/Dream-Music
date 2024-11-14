@@ -1,5 +1,4 @@
 import React, { createContext, useState, useContext } from 'react';
-
 export const MusicInstances =  [
     {
       id: "t1",
@@ -46,20 +45,7 @@ export const MusicInstances =  [
       duration: "2:48",
       imageUrl: "/5.svg",
     },
-    // {
-    //   id: "t9",
-    //   src: "/music/01 Song Seven.mp3",
-    //   title: "Song Seven",
-    //   artist: "Interpol",
-    //   album: "Album Name",
-    //   duration: "4:52",
-    //   imageUrl: "/album-art.jpg",
-    // },
   ];
-  
-
-
-
 const MusicContext = createContext();
 
 export const MusicProvider = ({ children }) => {
