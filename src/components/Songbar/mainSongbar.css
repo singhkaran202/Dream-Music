@@ -1,6 +1,6 @@
 .mainSongbar{
     /* border: 2px solid rgb(166, 255, 0); */
-    height: 140vh;
+    height: 95vh;
     display: flex;
     align-items: flex-end;
 }

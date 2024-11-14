@@ -2,48 +2,53 @@ import React, { createContext, useState, useContext } from 'react';
 export const MusicInstances =  [
     {
       id: "t1",
-      src: "/music/1.mp3",
-      title: "Khaayi Kasam",
+      src: "/music/1_m.mp3",
+      title: "Bilie Jean",
       artist: "Pale Honey",
       album: "Thriller 25 Sup..",
       duration: "5:52",
       imageUrl: "/1.svg",
+      playing: "5,199,100"
     },
     {
       id: "t2",
-      src: "./music/2.mp3",
+      src: "./music/2_m.mp3",
       title: "Rabbit Rebellion",
       artist: "GeoPoet",
       album: "Thriller 25 Sup...",
-      duration: "8:32",
+      duration: "4:28",
       imageUrl: "/2.svg",
+      playing: "12,148,165"
     },
     {
       id: "t3",
-      src: "/music/Khruangbin - Maria También.mp3",
+      src: "/music/3_m.mp3",
       title: "Maria Tambien",
       artist: "Khruangbin",
       album: "Thriller 25 Sup...",
       duration: "3:10",
       imageUrl: "/3.svg",
+      playing: "55,165,100"
     },
     {
       id: "t4",
-      src: "/music/1_4 - The Moment (Outro) - Bell Witch (128).mp3",
+      src: "/music/4_m.mp3",
       title: "The Moment (Outro)",
       artist: "Bell Witch",
       album: "Bad 25th Anni...",
       duration: "3:06",
       imageUrl: "/4.svg",
+      playing: "9,567,178"
     },
     {
       id: "t5",
-      src: "/music/Sufjan Stevens - To Be Alone With You.mp3",
+      src: "/music/5_m.mp3",
       title: "To Be Alone With You",
       artist: "Sufjan Stevens",
       album: "Off the Wall",
       duration: "2:48",
       imageUrl: "/5.svg",
+      playing: "48,640,783"
     },
   ];
 const MusicContext = createContext();

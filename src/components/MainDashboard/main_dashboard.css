@@ -1,9 +1,9 @@
-/* .mainDashboard{
-    border: 2px solid rgb(0, 0, 0);
-}
+
 .artist{
-    width: 80%;
-} */
+    width: 70%;
+
+    /* height: 500px; */
+}
 
 .mainDashboard {
     padding: 0;

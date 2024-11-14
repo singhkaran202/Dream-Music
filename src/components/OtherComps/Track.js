@@ -42,7 +42,7 @@ export default function Track({
       className=""
       onClick={handleClick}
     >
-      <td className="p-4">
+      <td className="text-tbl">
         {isPlaying ? (
           
           <Pause size={20} className="" />
@@ -51,11 +51,11 @@ export default function Track({
           // <Play size={20} className="" />
         )}
       </td>
-      <td className=""><img className="imggg" src={track.imageUrl} /></td>
-      <td className="">{track.title}</td>
-      <td className="">1,222,222</td>
-      <td className="">{track.duration}</td>
-      <td className="album">{track.album}</td>
+      <td className="text-tbl"><img className="imggg" src={track.imageUrl} /></td>
+      <td className="text-tbl">{track.title}</td>
+      <td className="text-tbl">{track.playing}</td>
+      <td className="text-tbl">{track.duration}</td>
+      <td className="album text-tbl">{track.album}</td>
       
     </tr>
   );
