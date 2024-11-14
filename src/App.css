@@ -1,18 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff; /* Set a default font color if needed */
+}
+
 .App{
   /* width: 100%; */
+  /* display: inline-block; */
   border: 9px solid green;
 }
 .left{
-  width: 20%;
   display: inline-block;
+  width: 15%;  
+  border: 2px solid rgb(111, 0, 128);
 }
 .center{
-  width: 74%;
+  /* margin-top: 34%; */
   display: inline-block;
+  width: 70%;
+  border: 2px solid rgb(38, 0, 255);
+  
 }
 .right{
-  width: 26%;
   display: inline-block;
+  width: 26%;
+  border: 2px solid rgb(38, 0, 255);
 }
 .mainn{
   display: inline-block;

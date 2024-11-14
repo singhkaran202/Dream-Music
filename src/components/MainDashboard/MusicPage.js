@@ -15,16 +15,20 @@ const MusicPage = () => {
     setCurrentTrackIndex
   } = useMusicContext();
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-950 to-red-900 pb-96">
-      <table className="w-full p-2 m-2 text-white">
+    <div className="">
+      <div className="cl">
+        <div className="cl1">Popular</div>
+        <div className="cl2">See All</div>
+      </div>
+      <table className="">
         <thead>
-          <tr className="text-left">
-            <th className="p-4">#</th>
-            <th className="p-4"> </th>
-            <th className="p-4">Title</th>
-            <th className="p-4">Playing</th>
-            <th className="p-4">Play</th>
-            <th className="p-4">Album</th>
+          <tr className="">
+            <th className="">#</th>
+            <th className=""> </th>
+            <th className="">TITLE</th>
+            <th className="">PLAYING</th>
+            <th className="">TIME</th>
+            <th className="album">ALBUM</th>
           </tr>
         </thead>
         <tbody>

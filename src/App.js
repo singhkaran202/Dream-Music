@@ -17,7 +17,7 @@ function App() {
           <CenterDash />
         </div>
         <div className='right'>
-          <RightMusicBar />
+          <RightMusicBar className="rt" />
         </div>
       </div>        
     </div>

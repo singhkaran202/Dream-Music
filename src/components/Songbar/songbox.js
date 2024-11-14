@@ -27,7 +27,7 @@ export default function SongBox({
 
   return (
     <div className="songbox-wrapper">
-      <Player
+      <Player className="plyr"
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
         selectedMusic={selectedMusic}

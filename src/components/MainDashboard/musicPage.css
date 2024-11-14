@@ -1,3 +1,31 @@
-.text-clr-wht{
-    color:aliceblue;
-  }
+table {
+  border-spacing: 12%; /* Adjust the spacing value as needed */
+  width: 95%;
+  border-collapse: separate;
+}
+th {
+  text-align: left; /* Align all headings to the left */
+}
+
+th.album {
+  text-align: right; /* Align the 'ALBUM' heading to the right */
+  /* border: 2px solid blue; */
+  /* margin-left: 20%; */
+}
+
+.cl1{
+  display: inline-block;
+  /* text-align: left; */
+  margin-left: 1%;
+}
+.cl2{
+  display: inline-block;
+  /* text-align: right; */
+  /* border: 2px solid blue; */
+  margin-left: 76%;
+}
+.cl{
+  /* border: 2px solid blue;   */
+  font-weight: 600;
+  margin-bottom: 2%;
+}

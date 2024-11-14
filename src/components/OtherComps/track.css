@@ -4,9 +4,7 @@
     border-radius: 5px;
     object-fit: cover;
   }
-  .text-clr{
-    color:aliceblue;
-  }
+
   .track-cls{
     border: 2px solid blue;
   }
@@ -19,4 +17,9 @@
     height: 50px;
     border-radius: 5px;
     object-fit: cover;
+  }
+  td.album{
+    /* padding-left: 2%; */
+    text-align: right;
+    /* border: 2px solid rgb(75, 128, 0); */
   }

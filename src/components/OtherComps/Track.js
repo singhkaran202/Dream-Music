@@ -40,21 +40,23 @@ export default function Track({
 
   return (
     <tr 
-      className="text-clr hover:bg-red-800/30 transition cursor-pointer"
+      className=""
       onClick={handleClick}
     >
       <td className="p-4">
         {isPlaying ? (
-          <Pause size={20} className="text-white" />
+          
+          <Pause size={20} className="" />
         ) : (
-          <Play size={20} className="text-white" />
+          track.id[1]
+          // <Play size={20} className="" />
         )}
       </td>
-      <td className="p-4"><img className="imggg" src={track.imageUrl} /></td>
-      <td className="p-4">{track.title}</td>
-      <td className="p-4">1,222,222</td>
-      <td className="p-4">{track.duration}</td>
-      <td className="p-4">{track.album}</td>
+      <td className=""><img className="imggg" src={track.imageUrl} /></td>
+      <td className="">{track.title}</td>
+      <td className="">1,222,222</td>
+      <td className="">{track.duration}</td>
+      <td className="album">{track.album}</td>
       
     </tr>
   );

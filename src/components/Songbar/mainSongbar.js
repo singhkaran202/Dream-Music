@@ -16,7 +16,7 @@ const MainSongbar = () => {
   
   return (
     <div className="mainSongbar">
-      <SongBox
+      <SongBox className="sbox"
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
         selectedMusic={selectedMusic}
